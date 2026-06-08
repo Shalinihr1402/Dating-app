@@ -1,0 +1,18 @@
+{
+  "name": "dating-app-mern",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A MERN dating app project with an Express API and React frontend.",
+  "scripts": {
+    "install:all": "C:\\Progra~1\\nodejs\\npm.cmd install --prefix server && C:\\Progra~1\\nodejs\\npm.cmd install --prefix client",
+    "dev": "C:\\Progra~1\\nodejs\\node.exe scripts/dev.js",
+    "dev:server": "C:\\Progra~1\\nodejs\\npm.cmd run dev --prefix server",
+    "dev:client": "C:\\Progra~1\\nodejs\\npm.cmd run dev --prefix client",
+    "seed": "C:\\Progra~1\\nodejs\\npm.cmd run seed --prefix server",
+    "build": "C:\\Progra~1\\nodejs\\npm.cmd run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
