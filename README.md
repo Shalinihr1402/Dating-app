@@ -1,52 +1,56 @@
-# Dating App with MERN
+Dating App (MERN Stack)
 
-A simple dating app built with MongoDB, Express, React, and Node.js. The backend exposes profile and swipe endpoints, while the frontend shows a swipe-style profile deck using Material UI components and icons.
+A simple dating app built using MongoDB, Express.js, React, and Node.js. Users can browse profiles and swipe to like or pass.
 
-## Project Structure
+Features
 
-```text
+- View user profiles
+- Swipe left or right
+- Store swipe history
+- REST API with MongoDB
+
+Project Structure
+
 .
-├── client   React + Vite frontend
-└── server   Express + MongoDB API
-```
+├── client   # React + Vite frontend
+└── server   # Express + MongoDB backend
 
-## Setup
+Installation
 
-1. Install dependencies:
-
-```bash
 npm run install:all
-```
 
-2. Create backend environment file:
+Environment Setup
 
-```bash
-copy server\.env.example server\.env
-```
+Create a ".env" file inside the "server" folder and add your MongoDB connection string.
 
-Update `server\.env` with your MongoDB connection string.
+MONGO_URI=your_mongodb_connection_string
 
-3. Seed sample profiles:
+Seed Sample Data
 
-```bash
 npm run seed
-```
 
-4. Run both apps:
+Run the Application
 
-```bash
 npm run dev
-```
 
-The frontend runs at `http://localhost:5173` and the backend runs at `http://localhost:5000`.
+- Frontend: http://localhost:5173
+- Backend: http://localhost:5000
 
-## API Endpoints
+API Routes
 
-- `GET /api/health`
-- `GET /api/profiles`
-- `GET /api/profiles/:id`
-- `POST /api/profiles`
-- `PATCH /api/profiles/:id`
-- `DELETE /api/profiles/:id`
-- `POST /api/swipes`
-- `GET /api/swipes`
+Profiles
+
+- "GET /api/profiles"
+- "GET /api/profiles/:id"
+- "POST /api/profiles"
+- "PATCH /api/profiles/:id"
+- "DELETE /api/profiles/:id"
+
+Swipes
+
+- "POST /api/swipes"
+- "GET /api/swipes"
+
+Health Check
+
+- "GET /api/health"
